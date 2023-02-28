@@ -5,12 +5,12 @@ using UnityEngine.InputSystem;
 
 public class BallDebug : MonoBehaviour
 {
-    Rigidbody2D rigidbody;
+    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class BallDebug : MonoBehaviour
 
     public void SetBall(Vector2 pos)
     {
-        rigidbody.position = pos;
-        rigidbody.velocity = new Vector2(0, 0);
+        rb.position = pos;
+        rb.velocity = new Vector2(0, 0);
     }
 }

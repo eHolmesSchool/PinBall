@@ -12,6 +12,11 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] InputAction useLeft;
     [SerializeField] InputAction useRight;
 
+    private void OnEnable()
+    {
+        useLeft.Enable();
+        useRight.Enable();
+    }
     private void OnDisable()
     {
         useLeft.Disable();
@@ -19,16 +24,9 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
 
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        leftPaddle.Flip(useLeft.ReadValue<bool>());
-        rightPaddle.Flip(useRight.ReadValue<bool>());
+        leftPaddle.Flip(useLeft.IsPressed());
+        rightPaddle.Flip(useRight.IsPressed());
     }
 }

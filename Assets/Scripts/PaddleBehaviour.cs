@@ -13,11 +13,13 @@ public class PaddleBehaviour : MonoBehaviour
 
     private void Start()
     {
+
     }
-    void Update()
-    {
-        Flip(Input.GetKey(controlName)); ;
-    }
+
+    //void Update()
+    //{
+    //    Flip(Input.GetKey(controlName)); ;
+    //}
 
     public void Flip(bool isPressed)
     {

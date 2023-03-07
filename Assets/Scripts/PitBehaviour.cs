@@ -25,7 +25,7 @@ public class PitBehaviour : MonoBehaviour
 
     IEnumerator WaitToRespawn(Collider2D collided)
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         collided.attachedRigidbody.transform.position = SpawnPoint.transform.position;
         collided.attachedRigidbody.transform.rotation = SpawnPoint.transform.rotation;
         collided.attachedRigidbody.velocity = new Vector2 (0,0) ;

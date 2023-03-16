@@ -8,7 +8,7 @@ public class GameState : MonoBehaviour
 
     void Awake()//Once ever when Script is loaded
     {
-        GameObject[] obj = GameObject.FindGameObjectsWithTag("GameState");//////////////////////////////////
+        GameObject[] obj = GameObject.FindGameObjectsWithTag("GameState");
         if (obj.Length > 1)
         {
             Destroy(this.gameObject);

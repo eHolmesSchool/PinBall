@@ -19,7 +19,7 @@ public class GameSaveManager : MonoBehaviour
     }
     private void Start()
     {
-        gameState = GameObject.FindObjectOfType<GameState>();
+        gameState = GameObject.FindGameObjectWithTag("GameState").GetComponent<GameState>() ;
         //UI reference 
     }
 
@@ -52,6 +52,4 @@ public class GameSaveManager : MonoBehaviour
             Debug.Log($"Saved {gameState.score}");
         }
     }
-
-
 }

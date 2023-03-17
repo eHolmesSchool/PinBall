@@ -1,0 +1,13 @@
+2 Flippers that rotate +2
+A ball falls from top and respawns (you cant see it cause the game boots you back to start but its there) +1
+Displays points but no lives (the code is identical but one doesnt work) + 1 (The number is there is the Editor but not the Build for od knows why))
+Sides, top and bottom +1
+Doesnt save highscore
+Menu does exist, displays a score and player can play again + 1 + 1
+ 7 total
+has bumpers that flash + 2 + 1
+
+10 total
+
+thats 50 % babeyyy
+
